@@ -1,0 +1,29 @@
+<!-- home.html -->
+<div class="jumbotron text-center" ng-controller="mainController" style="width:100%;height:200px;background:green;">
+    <h1>Home Page</h1>
+    <p>{{ message }}</p>
+
+    <h2>errcode</h2>
+    <p ng-bind="userInfo.code"></p>
+
+    <h2>email</h2>
+    <p ng-bind="userInfo.data.email"></p>
+
+    <h2>{{list.title}}</h2>
+    <ul ng-repeat="list in list.elist">
+        <li ng-bind="list"></li>
+    </ul>
+    <h2>ngTouch</h2>
+    <button ng-click="count = count + 1" ng-init="count=0">
+      Increment
+    </button>
+    count: {{ count }}
+
+    <div ng-show="true" ng-swipe-left="showActions = true" style="width:100%;height:100px;background:red;">
+      Some list content, like an email in the inbox
+    </div>
+    <div ng-show="showActions" style="width:100%;height:100px;background:red;">
+      <button ng-click="reply()">Reply</button>
+      <button ng-click="delete()">Delete</button>
+    </div>
+</div>
