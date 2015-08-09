@@ -6,19 +6,19 @@ routeApp.config(function($routeProvider, $locationProvider) {
 	$routeProvider
 	// route for the home page
 	.when('/', {
-		templateUrl : '/angular/home.htm',
+		templateUrl : '/home.htm',
 		controller  : 'mainController'
 	})
 
 	// route for the about page
 	.when('/about', {
-		templateUrl : '/angular/about.htm',
+		templateUrl : '/about.htm',
 		controller  : 'aboutController'
 	})
 
 	// route for the contact page
 	.when('/contact', {
-		templateUrl : '/angular/contact.htm',
+		templateUrl : '/contact.htm',
 		controller  : 'contactController'
 	})
 
